@@ -44,7 +44,9 @@ public class FlushTest extends AbstractTest {
     private String pgm;
 
 
+
     @Before
+
     public void setup() throws URISyntaxException, IOException {
         fileName = "/convertor-tests/PrintFlushTest.k";
         utils = new KoreUtils(fileName, "IMP", "IMP-SYNTAX", kem);
@@ -68,6 +70,11 @@ public class FlushTest extends AbstractTest {
     }
 
 
+    /**
+     * this test will test the io.imp file in tutorial/imp++/lesson1/io.sum
+     * first to kompile the file and krun it, then use InputStream to simulate the input number
+     * @throws IOException
+     */
     @Test
     public void formatTest() throws IOException {
 

@@ -38,6 +38,12 @@ public class KompileTest extends AbstractTest {
     @Rule
     public ExpectedException thrown= ExpectedException.none();
 
+    /**
+     * This test aims to test the fix of bug 2213, once kompile the file Bags.k, exception will be thrown and caught
+     * @throws URISyntaxException
+     * @throws IOException
+     * @throws KEMException
+     */
     @Test
     public void KompileTest() throws URISyntaxException, IOException, KEMException {
         // try {
